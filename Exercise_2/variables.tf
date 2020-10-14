@@ -10,5 +10,5 @@ variable "function_name" {
 
 
 variable "lambda_output_path" {
-  default = "output.zip"
+  default = "lambda_script.zip"
 }

@@ -34,13 +34,13 @@ EOF
 }
 
 resource "aws_iam_role_policy_attachment" "lambda_logs" {
-  role = aws_iam_role.iam_for_lambda.name
-  policy_arn = aws_iam_policy.lambda_logging.arn
+  role = aws_iam_role.lambda_exec_role.name
+  policy_arn = aws_iam_policy.lambda_logging_policy.arn
 }
 
 
 
-resource "aws_iam_role" "iam_for_lambda" {
+resource "aws_iam_role" "lambda_exec_role" {
   name = "lambda_exec_role"
 
   assume_role_policy = <<EOF
@@ -68,18 +68,18 @@ data "archive_file" "lambda_zip" {
     output_path = var.lambda_output_path
 }
 
-resource "aws_lambda_function" "hellofunc_lambda" {
+resource "aws_lambda_function" "greeting_lambda" {
   description      = "Python lambda for Udacity project 2 Task 2"
-  role             = aws_iam_role.iam_for_lambda.arn
-  filename         = "lambdascript.zip"
+  role             = aws_iam_role.lambda_exec_role.arn
+  filename         = "lambda_script.zip"
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
   function_name    = var.function_name
-  handler          = "${var.function_name}.lambda_handler"
+  handler          = "greet_lambda.lambda_handler"
   runtime          = "python3.8"
 
   environment {
     variables = {
-      Name = "Lambda's Hello world "
+      greeting = "Lambda's Hello world "
     }
   }
 
