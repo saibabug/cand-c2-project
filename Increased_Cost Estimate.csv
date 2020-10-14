@@ -1,0 +1,19 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,4859.11,58309.32,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each EC2 instance (Provisioned IOPS SSD (io1)), Storage amount (500 GB), Instance type (t3.2xlarge), Provisioning IOPS (10000)"
+My Estimate,US East (Ohio),,S3 Standard,0,354.24,4250.88,USD,S3 Standard storage (15 TB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,0,0,USD,
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,1415.25,16983,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (2), Number of EIPs per instance (1)"
+My Estimate,US East (Ohio),,Amazon API Gateway,0,0,0,USD,"HTTP API requests units (millions), Average size of each request (34 KB), REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), Average message size (32 KB)"
+My Estimate,US East (Ohio),,Elastic Load Balancing,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),,Amazon RDS for MySQL,0,10187.304,122247.65,USD,"Quantity (2), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (10 TB), Instance type (db.m5.4xlarge), Additional backup storage (30 TB)"
+,,,,,,,,
+,,,,,,,,
+,Designer Notes,,,,,,,
+1,RDS Back up and storage size has been increased,,,,,,,
+2,No Upfront cost has been selected to avoid fees early in the project,,,,,,,
+3,RDS Instance type has been changed to M5.4xlarge for better performance loads processing,,,,,,,
+4,EC2 Instance has been opted with IOPS for better handling of more operations,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
