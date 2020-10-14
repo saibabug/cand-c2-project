@@ -1,13 +1,13 @@
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-Initial cost estimate,US East (Ohio),,Amazon EC2,0,352.42,4229.04,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (500 GB), Instance type (t3.large)"
-Initial cost estimate,US East (Ohio),,S3 Standard,0,354.24,4250.88,USD,S3 Standard storage (15 TB per month)
-Initial cost estimate,US East (Ohio),,Data Transfer,0,0,0,USD,
-Initial cost estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,2336.85,28042.2,USD,Number of NAT Gateways (1)
-Initial cost estimate,US East (Ohio),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (2), Number of EIPs per instance (1)"
-Initial cost estimate,US East (Ohio),,Amazon API Gateway,0,0,0,USD,"HTTP API requests units (millions), Average size of each request (34 KB), REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), Average message size (32 KB)"
-Initial cost estimate,US East (Ohio),,Elastic Load Balancing,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
-Initial cost estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,5146.066,61752.79,USD,"Quantity (2), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (5 TB per month), Instance type (db.m5.2xlarge), Additional backup storage (15 TB)"
+Initial cost estimate,US East (N. Virginia),,Amazon EC2,0,352.42,4229.04,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (500 GB), Instance type (t3.large)"
+Initial cost estimate,US East (N. Virginia),,S3 Standard,0,354.24,4250.88,USD,S3 Standard storage (15 TB per month)
+Initial cost estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+Initial cost estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,2336.85,28042.2,USD,Number of NAT Gateways (1)
+Initial cost estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (2), Number of EIPs per instance (1)"
+Initial cost estimate,US East (N. Virginia),,Amazon API Gateway,0,0,0,USD,"HTTP API requests units (millions), Average size of each request (34 KB), REST API request units (millions), Cache memory size (GB) (None), WebSocket message units (thousands), Average message size (32 KB)"
+Initial cost estimate,US East (N. Virginia),,Elastic Load Balancing,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
+Initial cost estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,5146.066,61752.79,USD,"Quantity (2), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage volume (General Purpose SSD (gp2)), Storage amount (5 TB per month), Instance type (db.m5.2xlarge), Additional backup storage (15 TB)"
 ,,,,,,,,
 ,,,,,,,,
-,,,,,,,,
+Estimate link,https://calculator.aws/#/estimate?id=06edc4e65060621dcf5ba64de584718632a4b13a,,,,,,,
 "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
